@@ -1,19 +1,25 @@
 import React from "react";
+import NavBar from "./NavBar";
 
 const Header: React.FC = () => {
   return (
-    <>
-      {/* HEADER */}
-      <header className="relative bg-purple-700 text-white">
-        <div className="max-w-5xl mx-auto text-center py-24 px-6">
-          <h1 className="text-5xl font-bold mb-6">
+    <header className="relative bg-yellow-300 text-black overflow-hidden">
+      {/* Navbar */}
+      <NavBar />
+
+      {/* Contenido principal */}
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-20">
+        
+        {/* Columna Izquierda - Texto */}
+        <div className="max-w-xl">
+          <h1 className="text-5xl font-bold mb-6 leading-tight">
             We are digital agency <br /> & Marketing
           </h1>
-          <p className="text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-lg mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Impedit
             nihil tenetur minus quidem est deserunt molestias accusamus harum.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex gap-4">
             <button className="bg-white text-purple-700 font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition">
               Start a Project
             </button>
@@ -23,20 +29,46 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* CURVA BLANCA */}
+        {/* Columna Derecha - Imágenes */}
+        <div className="relative w-[500px] h-[400px]">
+          <img
+            src="./thumb_1.png"
+            alt="Fondo"
+            className="absolute top-0 left-0 w-full h-full object-contain"
+          />
+          <img
+            src="./thumb_2.png"
+            alt="Gráfico"
+            className="absolute top-10 left-12 w-56"
+          />
+          <img
+            src="./thumb_3.png"
+            alt="Persona"
+            className="absolute bottom-0 right-6 w-48"
+          />
+          <img
+            src="./thumb_4.png"
+            alt="Detalles"
+            className="absolute top-20 right-0 w-28"
+          />
+        </div>
+      </div>
+
+      {/* Curva SVG inferior */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
         <svg
-          className="absolute bottom-0 left-0 w-full h-32"
+          className="relative block w-full h-24"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
           preserveAspectRatio="none"
+          viewBox="0 0 100 100"
         >
           <path
-            fill="transparent"
-            d="M0,128L30,138.7C60,149,120,171,180,186.7C240,203,300,213,360,202.7C420,192,480,160,540,160C600,160,660,192,720,202.7C780,213,840,203,900,186.7C960,171,1020,149,1080,138.7C1140,128,1200,128,1260,138.7C1320,149,1380,171,1410,181.3L1440,192L1440,320L0,320Z"
+            d="M0,0 C40,150 60,150 100,0 L100,100 L0,100 Z"
+            className="fill-white"
           />
         </svg>
-      </header>
-    </>
+      </div>
+    </header>
   );
 };
 
