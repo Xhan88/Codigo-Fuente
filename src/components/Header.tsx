@@ -1,9 +1,11 @@
 import React from "react";
 import NavBar from "./NavBar";
 
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 const Header: React.FC = () => {
   return (
-    <header className="relative bg-yellow-300 text-black overflow-hidden">
+    <header className="relative bg-[rgb(24,18,146)] text-white overflow-hidden">
       {/* Navbar */}
       <NavBar />
 
@@ -31,7 +33,12 @@ const Header: React.FC = () => {
 
         {/* Columna Derecha - Imágenes */}
         <div className="relative w-[500px] h-[400px]">
-          <img
+        <DotLottieReact
+          src="https://lottie.host/01326b74-3dce-49b4-b4b0-0f42b07f57c3/zSLbdfdh9T.lottie"
+          loop
+          autoplay
+        />
+          {/* <img
             src="./thumb_1.png"
             alt="Fondo"
             className="absolute top-0 left-0 w-full h-full object-contain"
@@ -50,24 +57,28 @@ const Header: React.FC = () => {
             src="./thumb_4.png"
             alt="Detalles"
             className="absolute top-20 right-0 w-28"
-          />
+          /> */}
         </div>
       </div>
 
       {/* Curva SVG inferior */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg
-          className="relative block w-full h-24"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          viewBox="0 0 100 100"
-        >
-          <path
-            d="M0,0 C40,150 60,150 100,0 L100,100 L0,100 Z"
-            className="fill-white"
-          />
-        </svg>
-      </div>
+
+      {/* Curva SVG inferior */}
+<div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+  <svg
+    className="relative block w-full h-32"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none"
+    viewBox="0 0 1440 320"
+  >
+    <path
+      fill="#ffffff"
+      d="M0,240 C360,400 1080,80 1440,240 L1440,320 L0,320 Z"
+    />
+  </svg>
+</div>
+
+
     </header>
   );
 };

@@ -1,12 +1,13 @@
 import Header from "./components/Header"
-// import NavBar from "./components/NavBar"
+import Service from "./components/Service"
+
 
 const App = () => {
   return (
     <>
        {/* <NavBar/> */}
        <Header />
-  
+       <Service />
     </>
   )
 }
