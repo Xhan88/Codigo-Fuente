@@ -14,7 +14,7 @@ const Header: React.FC = () => {
         
         {/* Columna Izquierda - Texto */}
         <div className="max-w-xl">
-          <h1 className="text-5xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl font-bold mb-6 leading-tight text-[#c8ed4e]">
             We are digital agency <br /> & Marketing
           </h1>
           <p className="text-lg mb-8">

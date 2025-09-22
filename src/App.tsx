@@ -1,4 +1,5 @@
 import Header from "./components/Header"
+import BusinessSection from "./components/OurMision"
 import Service from "./components/Service"
 
 
@@ -8,6 +9,7 @@ const App = () => {
        {/* <NavBar/> */}
        <Header />
        <Service />
+       <BusinessSection />
     </>
   )
 }

@@ -29,8 +29,6 @@ const services: Service[] = [
 
 const ServicesCards: React.FC = () => {
   return (
-
-    <>
     <section className="w-full max-w-6xl mx-auto px-6 py-12">
    
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -64,23 +62,23 @@ const ServicesCards: React.FC = () => {
           </article>
         ))}
       </div>
+
+      <div className="relative">
+    <svg
+      className="w-full h-20 text-white"
+      viewBox="0 0 1440 320"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+    >
+      <path
+        fill="currentColor"
+        d="M0,128 C480,320 960,0 1440,192 L1440,320 L0,320 Z"
+      />
+    </svg>
+  </div>
     </section>
 
-    {/* Separador curvo */}
-<div className="relative">
-  <svg
-    className="w-full h-20 text-white"
-    viewBox="0 0 1440 320"
-    xmlns="http://www.w3.org/2000/svg"
-    preserveAspectRatio="none"
-  >
-    <path
-      fill="currentColor"
-      d="M0,192 C360,320 1080,64 1440,192 L1440,320 L0,320 Z"
-    ></path>
-  </svg>
-</div>
-</>
+    
   );
 };
 
