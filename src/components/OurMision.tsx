@@ -61,8 +61,8 @@ const BusinessSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Separador curvo */}
-      <div className="absolute bottom-0 w-full overflow-hidden leading-[0]">
+      {/* 🔹 Separador curvo dentro del mismo section */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
         <svg
           className="relative block w-full h-20"
           viewBox="0 0 1440 320"
@@ -70,8 +70,8 @@ const BusinessSection: React.FC = () => {
           preserveAspectRatio="none"
         >
           <path
-            fill="#ffffff"
-            d="M0,128 C480,320 960,0 1440,192 L1440,320 L0,320 Z"
+            fill="white"
+            d="M0,224 C480,320 960,128 1440,224 L1440,320 L0,320 Z"
           />
         </svg>
       </div>

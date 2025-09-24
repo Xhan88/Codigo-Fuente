@@ -47,7 +47,7 @@ const AboutSection: React.FC = () => {
       {/* Texto derecha */}
       <div>
         <h2 className="text-4xl font-bold mb-4">
-          Work <span className="text-[#71f82d]">smarter</span>, not harder.
+          Work <span className="text-[#c8ed4e]">smarter</span>, not harder.
         </h2>
         <p className="text-gray-600 mb-8">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum

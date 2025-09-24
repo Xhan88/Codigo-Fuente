@@ -91,7 +91,7 @@ const OtherServices: React.FC = () => {
   
     </section>
 
-<div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+{/* <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
 <svg
   className="relative block w-[calc(100%+1.3px)] h-20"
   xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ const OtherServices: React.FC = () => {
     fill="#ffffff"
   ></path>
 </svg>
-</div>
+</div> */}
 </>
   );
 };
