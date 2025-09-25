@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "lib": ["dom", "es2015"],
-"module": "esnext",
-"moduleResolution": "node",  // 👈 y aquí también Node16
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "strict": true,
     "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
