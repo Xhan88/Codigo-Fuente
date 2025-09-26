@@ -1,5 +1,7 @@
 import AboutSection from "./components/AboutSecction"
+import ContactSection from "./components/ContactSection"
 import Header from "./components/Header"
+import HeroSection from "./components/HeroSection"
 import OtherServices from "./components/OtherServices"
 import BusinessSection from "./components/OurMision"
 import PricingPackages from "./components/PricingPackages"
@@ -16,6 +18,8 @@ const App = () => {
        <AboutSection />
        <OtherServices />
        <PricingPackages />
+       <ContactSection />
+       <HeroSection />
     </>
   )
 }

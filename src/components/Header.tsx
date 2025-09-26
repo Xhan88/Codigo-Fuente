@@ -38,32 +38,9 @@ const Header: React.FC = () => {
           loop
           autoplay
         />
-          {/* <img
-            src="./thumb_1.png"
-            alt="Fondo"
-            className="absolute top-0 left-0 w-full h-full object-contain"
-          />
-          <img
-            src="./thumb_2.png"
-            alt="Gráfico"
-            className="absolute top-10 left-12 w-56"
-          />
-          <img
-            src="./thumb_3.png"
-            alt="Persona"
-            className="absolute bottom-0 right-6 w-48"
-          />
-          <img
-            src="./thumb_4.png"
-            alt="Detalles"
-            className="absolute top-20 right-0 w-28"
-          /> */}
         </div>
       </div>
 
-      {/* Curva SVG inferior */}
-
-      {/* Curva SVG inferior */}
 <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
   <svg
     className="relative block w-full h-32"
