@@ -1,5 +1,6 @@
 import AboutSection from "./components/AboutSecction"
 import ContactSection from "./components/ContactSection"
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import HeroSection from "./components/HeroSection"
 import OtherServices from "./components/OtherServices"
@@ -11,7 +12,6 @@ import Service from "./components/Service"
 const App = () => {
   return (
     <>
-       {/* <NavBar/> */}
        <Header />
        <Service />
        <BusinessSection />
@@ -20,6 +20,7 @@ const App = () => {
        <PricingPackages />
        <ContactSection />
        <HeroSection />
+       <Footer />
     </>
   )
 }

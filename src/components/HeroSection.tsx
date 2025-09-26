@@ -6,16 +6,13 @@ const HeroSection: React.FC = () => {
     <section
       className="relative flex flex-col items-center justify-center text-center text-white py-32 overflow-hidden"
     >
-      {/* Fondo con efecto parallax */}
       <div
         className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1920&q=80')] 
         bg-cover bg-center bg-fixed opacity-80"
       ></div>
 
-      {/* Capa de color morado translúcido */}
       <div className="absolute inset-0 bg-blue-700/70"></div>
 
-      {/* Contenido */}
       <motion.div
         className="relative z-10 max-w-4xl mx-auto px-6"
         initial={{ opacity: 0, y: 40 }}
@@ -42,7 +39,6 @@ const HeroSection: React.FC = () => {
         </motion.a>
       </motion.div>
 
-      {/* Capa de gradiente inferior */}
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-blue-700 to-transparent"></div>
     </section>
   );

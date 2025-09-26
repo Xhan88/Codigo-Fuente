@@ -5,7 +5,6 @@ const ContactSection: React.FC = () => {
   return (
     <section className="bg-gray-100 py-16" id="contact">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
-        {/* Texto e información de contacto */}
         <div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Let’s connect!
@@ -43,7 +42,6 @@ const ContactSection: React.FC = () => {
           </ul>
         </div>
 
-        {/* Formulario de contacto */}
         <form className="bg-white shadow-lg rounded-2xl p-8 space-y-5">
           <div className="grid md:grid-cols-2 gap-4">
             <input
