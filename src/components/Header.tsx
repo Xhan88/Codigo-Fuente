@@ -22,7 +22,7 @@ const Header: React.FC = () => {
             <button className="bg-[#b2dc28] text-[rgb(24,18,146)] font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition">
               Start a Project
             </button>
-            <button className="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#b2dc28] transition">
+            <button className="bg-[#b2dc28] text-[rgb(24,18,146)] font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition">
               Contact Us
             </button>
           </div>

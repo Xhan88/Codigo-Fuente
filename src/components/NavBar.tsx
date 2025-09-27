@@ -20,7 +20,7 @@ const NavBar = () => {
                        <FontAwesomeIcon icon={faInstagram} className="text-purple-300 text-xl cursor-pointer mx-4" />
           </div>
           <div>
-          <button className="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#b2dc28] transition">
+          <button className="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[rgb(24,18,146)] transition">
               Contactanos
               </button>
           </div>
