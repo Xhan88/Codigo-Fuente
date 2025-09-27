@@ -12,17 +12,17 @@ const Header: React.FC = () => {
         
         <div className="max-w-xl">
           <h1 className="text-5xl font-bold mb-6 leading-tight text-[#c8ed4e]">
-            We are digital agency <br /> & Marketing
+           "Código Fuente"<br /> Tu agencia de Marketing digital
           </h1>
           <p className="text-lg mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Impedit
-            nihil tenetur minus quidem est deserunt molestias accusamus harum.
+          Construimos lo que tu negocio necesita para crecer.
+          "Transformamos ideas en resultados digitales."
           </p>
           <div className="flex gap-4">
-            <button className="bg-[#939292] text-[#b2dc28] font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition">
+            <button className="bg-[#b2dc28] text-[rgb(24,18,146)] font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition">
               Start a Project
             </button>
-            <button className="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-700 transition">
+            <button className="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#b2dc28] transition">
               Contact Us
             </button>
           </div>
