@@ -79,31 +79,17 @@ const OtherServices: React.FC = () => {
               </div>
               <h3 className="mt-4 text-lg font-semibold text-gray-900">{item.title}</h3>
               <p className="mt-2 text-gray-600">{item.description}</p>
-              <a href="#" className="mt-4 text-sm font-semibold text-indigo-600 hover:underline">
-                Learn More
-              </a>
+
             </div>
           ))}
         </div>
       </div>
 
-      {/* Fondo curvo abajo */}
+     
   
     </section>
 
-{/* <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-<svg
-  className="relative block w-[calc(100%+1.3px)] h-20"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
-  viewBox="0 0 1200 120"
->
-  <path
-    d="M0 0L1200 0 1200 46.29C1104.36 65.34 989.4 75.55 864 72.65c-131.88-3.06-258.24-23.45-393.72-30.38C335.6 35.11 180.73 42.28 0 90V0z"
-    fill="#ffffff"
-  ></path>
-</svg>
-</div> */}
+
 </>
   );
 };

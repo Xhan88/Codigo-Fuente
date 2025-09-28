@@ -8,50 +8,45 @@ const BusinessSection: React.FC = () => {
         {/* Columna izquierda */}
         <div>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-            We help to grow your business.
+          Impulsamos el crecimiento de tu negocio.
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-            obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
-            asperiores sit.
+          En Código Fuente te ayudamos a llevar tu marca al siguiente nivel. Creamos estrategias digitales efectivas que aumentan tu visibilidad, atraen clientes y potencian tus ventas.
           </p>
 
           <div className="space-y-6">
             <div>
               <h3 className="text-xl font-semibold text-gray-900">
-                Online Presence
+              💼 Presencia Online
               </h3>
               <p className="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis, distinctio.
+              Construimos tu presencia digital con un sitio web profesional y redes sociales activas que conectan con tu audiencia y reflejan la esencia de tu marca.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold text-gray-900">
-                Marketing Strategy
+              📈 Estrategia de Marketing
               </h3>
               <p className="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis, distinctio.
+              Diseñamos campañas personalizadas para posicionar tu negocio, atraer clientes potenciales y generar resultados medibles.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold text-gray-900">
-                Promote Local Sales
+              🛍️ Impulso a Ventas Locales
               </h3>
               <p className="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis, distinctio.
+              Aumenta tus ventas en tu comunidad con estrategias locales que te ayudan a destacar frente a la competencia.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Columna derecha */}
+       
         <div className="flex justify-center">
-          <div className="w-[424px] h-[424px]">
+          <div className="w-[444px] h-[444px]">
             <DotLottieReact
               src="https://lottie.host/12286d84-df29-440e-ab24-2ce0d5d58e99/QBiQrYDpCM.lottie"
               loop
@@ -61,7 +56,7 @@ const BusinessSection: React.FC = () => {
         </div>
       </div>
 
-      {/* 🔹 Separador curvo dentro del mismo section */}
+     
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
         <svg
           className="relative block w-full h-20"

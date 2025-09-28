@@ -1,62 +1,61 @@
 import React from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
-
 type Service = {
   id: number;
   title: string;
   description: string;
 };
 
+
 const services: Service[] = [
   {
     id: 1,
-    title: "Digital Agency & Marketing",
+    title: "Aumenta tu presencia digital",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio.",
+      "Con una estrategia bien ejecutada en redes sociales y sitio web profesional, más personas conocerán tu negocio, tus productos y servicios.",
   },
   {
     id: 2,
-    title: "Planning To Startup",
+    title: "Conecta con más clientes potenciales",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio.",
+      "Creamos campañas publicitarias inteligentes que te ayudan a llegar justo al público que realmente está interesado en lo que ofreces.",
   },
   {
     id: 3,
-    title: "Content Management",
+    title: "Convierte visitas en ventas",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio.",
+      "Optimizamos tu contenido y diseño para que tus visitantes se conviertan en clientes reales, aumentando tus ingresos mes a mes.",
   },
 ];
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-<div className='w-[724px]'>
-     <div className="w-full">
-      <DotLottieReact
-      src="https://lottie.host/5e26bbcd-e9ac-4577-9eba-df8408833ca7/xJvXenD9D1.lottie"
-      loop
-      autoplay
-    />
+    <section className=" mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-15 items-center">
+      
+      
+      <div className="flex justify-center md:justify-end">
+        <div className="w-[50rem] max-w-full">
+          <DotLottieReact
+            src="https://lottie.host/5e26bbcd-e9ac-4577-9eba-df8408833ca7/xJvXenD9D1.lottie"
+            loop
+            autoplay
+          />
+        </div>
       </div>
-</div>
 
-
-      {/* Texto derecha */}
+     
       <div>
-        <h2 className="text-4xl font-bold mb-4">
-          Work <span className="text-[#c8ed4e]">smarter</span>, not harder.
+      <h2 className="text-4xl font-bold mb-4">
+          Haz crecer tus <span className="text-[#c8ed4e]">ganancias</span> con una <br /> estrategia digital efectiva.
         </h2>
         <p className="text-gray-600 mb-8">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-          obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
-          asperiores sit.
+        Hoy, estar en internet no es suficiente. Necesitas destacar. <br /> En <strong>Código Fuente</strong> desarrollamos estrategias digitales que impulsan tu visibilidad, <br /> generan confianza y multiplican tus ventas.
+
         </p>
 
-        {/* Bloques de servicios */}
-        <div className="space-y-6">
+        
+        <div className="space-y-9">
           {services.map((service) => (
             <div key={service.id}>
               <h3 className="text-xl font-semibold">{service.title}</h3>
@@ -66,9 +65,6 @@ const AboutSection: React.FC = () => {
         </div>
       </div>
     </section>
-
-    
-    
   );
 };
 
