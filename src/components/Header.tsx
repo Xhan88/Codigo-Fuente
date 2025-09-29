@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       <NavBar />
 
       {/* Contenedor principal */}
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-20 gap-3 md:gap-6">
+      <div className="mt-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-20 gap-3 md:gap-6">
         
         {/* Sección de texto */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-xl">
@@ -33,7 +33,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Animación Lottie */}
-        <div className=" w-[600px] sm:w-[550px] md:w-[500px] lg:w-[1100px] flex justify-center">
+        <div className=" w-[500px] sm:w-[550px] md:w-[500px] lg:w-[1100px] flex justify-center">
   <DotLottieReact
     src="https://lottie.host/01326b74-3dce-49b4-b4b0-0f42b07f57c3/zSLbdfdh9T.lottie"
     loop
