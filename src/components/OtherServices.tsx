@@ -68,7 +68,7 @@ const OtherServices: React.FC = () => {
           Soluciones digitales que impulsan tu negocio: desde desarrollo web hasta estrategias de marketing efectivas.
         </p>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-down">
           {features.map((item) => (
             <div
               key={item.id}

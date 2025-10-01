@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import "aos/dist/aos.css"; 
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const NavBar = () => {
   const closeMenu = () => toggleMenu();
 
   return (
-    <nav className="bg-[rgb(24,18,146)] text-white fixed w-full top-0 left-0 z-50">
+    <nav className="bg-[rgb(24,18,146)] text-white fixed w-full top-0 left-0 z-50"  data-aos="fade-up">
       <div className="flex justify-between items-center px-6 py-3 max-w-[1400px] mx-auto">
         
         <img

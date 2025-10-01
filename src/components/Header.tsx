@@ -14,10 +14,10 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className="relative bg-[rgb(24,18,146)] text-white overflow-hidden">
+    <header className="relative bg-[rgb(24,18,146)] h-[45rem] text-white overflow-hidden">
       <NavBar />
 
-      <div className="mt-20 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-20 gap-10">
+      <div className="mt-20 max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-20 gap-10">
         
         <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-xl">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight text-[#c8ed4e]" data-aos="fade-up">
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
             <span className="block mt-2">Transformamos ideas en resultados digitales.</span>
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4"  data-aos="fade-up">
             <button className="bg-[#b2dc28] text-[rgb(24,18,146)] font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition">
               Start a Project
             </button>
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
     style={{
       width: "100%",
       maxWidth: "600px",
-      height: "auto",
+      height: "15rem",
     }}
     
     data-aos="fade-left"
