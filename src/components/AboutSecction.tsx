@@ -49,7 +49,7 @@ const AboutSection: React.FC = () => {
      
       <div>
       <h2 className="text-4xl font-bold mb-4">
-          Haz crecer tus <span className="text-[#c8ed4e]">ganancias</span> con una <br /> estrategia digital efectiva.
+          Haz crecer tus <span className="text-[#c8ed4e] bold">ganancias</span> con una <br /> estrategia digital efectiva.
         </h2>
         <p className="text-gray-600 mb-8">
         Hoy, estar en internet no es suficiente. Necesitas destacar. <br /> En <strong>Código Fuente</strong> desarrollamos estrategias digitales que impulsan tu visibilidad, <br /> generan confianza y multiplican tus ventas.

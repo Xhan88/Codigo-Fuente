@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 const ContactSection: React.FC = () => {
   return (
     <section className="bg-gray-100 py-16" id="contact">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start"  data-aos="fade-up">
         <div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Let’s connect!

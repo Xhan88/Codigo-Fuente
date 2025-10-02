@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
       {/* Botón scroll-top */}
       <a
         href="#top"
-        className="fixed bottom-6 right-6 bg-black text-white p-3 rounded-full shadow-lg hover:bg-gray-800 transition"
+        className="fixed bottom-6 right-6 bg-[#b2dc28] text-white p-3 rounded-full shadow-lg hover:bg-gray-800 transition-all"
       >
         ↑
       </a>

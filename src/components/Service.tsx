@@ -34,12 +34,12 @@ const ServicesCards: React.FC = () => {
    
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         {services.map((s) => (
-          <article
-            key={s.id}
-            className="group relative rounded-2xl overflow-hidden p-8 transform transition-all duration-400 will-change-transform bg-white border border-gray-100 shadow-lg hover:shadow-2xl flex flex-col items-center text-center"
-            aria-labelledby={`service-${s.id}-title`}
-            role="article"
-          >
+        <article
+        data-aos="zoom-in-up"
+        data-aos-delay={s.id * 150}
+        key={s.id}
+        className="group relative rounded-2xl overflow-hidden p-8 bg-white/10 backdrop-blur-md border border-white/20 shadow-lg hover:shadow-[0_0_25px_#b2dc28] flex flex-col items-center text-center transition-all duration-800 hover:scale-[1.04]"
+      >
             <h3
               id={`service-${s.id}-title`}
               className="text-4xl sm:text-5xl font-bold leading-tight mb-4 text-gray-900 transition-transform duration-300 group-hover:-translate-y-1"

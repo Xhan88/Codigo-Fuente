@@ -16,7 +16,7 @@ const Header: React.FC = () => {
   return (
     <>
     <NavBar />
-    <header className="relative bg-[rgb(24,18,146)] h-[55rem] sm:h-[55rem] md:h-[45rem] text-white overflow-hidden">
+    <header className="relative bg-[rgb(24,18,146)] h-[58rem] sm:h-[55rem] md:h-[45rem] text-white overflow-hidden">
 
     
 
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
     loop
     autoplay
     style={{
-      width: "100%",
+      width: "[20rem]",
       maxWidth: "600px",
       height: "13rem",
     }}

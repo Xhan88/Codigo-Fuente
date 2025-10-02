@@ -57,7 +57,7 @@ const features: Feature[] = [
 const OtherServices: React.FC = () => {
   return (
     <>
-    <section className="relative bg-gray-50 py-20">
+    <section className="relative bg-gray-50 py-20"  data-aos="fade-up">
       
 
       <div className="max-w-6xl mx-auto px-6 text-center">

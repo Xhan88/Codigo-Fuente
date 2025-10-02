@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight"  data-aos="fade-up">
           looking for the best <br className="hidden md:block" />
           <span className="text-white">digital agency & marketing solution?</span>
         </h1>
