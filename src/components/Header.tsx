@@ -10,12 +10,15 @@ const Header: React.FC = () => {
    
   useEffect(() => {
     AOS.init({ duration: 1000 });
-    AOS.refresh(); // ✅ Ensures animations work even after dynamic content updates
+    AOS.refresh(); 
   }, []);
 
   return (
-    <header className="relative bg-[rgb(24,18,146)] h-[45rem] text-white overflow-hidden">
-      <NavBar />
+    <>
+    <NavBar />
+    <header className="relative bg-[rgb(24,18,146)] h-[55rem] sm:h-[55rem] md:h-[45rem] text-white overflow-hidden">
+
+    
 
       <div className="mt-20 max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-20 gap-10">
         
@@ -47,7 +50,7 @@ const Header: React.FC = () => {
     style={{
       width: "100%",
       maxWidth: "600px",
-      height: "15rem",
+      height: "13rem",
     }}
     
     data-aos="fade-left"
@@ -70,6 +73,7 @@ const Header: React.FC = () => {
         </svg>
       </div>
     </header>
+    </>
   );
 };
 

@@ -34,16 +34,17 @@ const AboutSection: React.FC = () => {
     <section className=" mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-15 items-center" data-aos="fade-up">
       
       
-      <div className="flex justify-center md:justify-end">
-        <div className="w-[50rem]">
-          <DotLottieReact
-            src="https://lottie.host/5e26bbcd-e9ac-4577-9eba-df8408833ca7/xJvXenD9D1.lottie"
-            loop
-            autoplay
-            style={{ width: "60rem", height: "30rem" }}
-          />
-        </div>
-      </div>
+      <div className="flex justify-center md:justify-end w-full">
+  <div className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
+    <DotLottieReact
+      src="https://lottie.host/5e26bbcd-e9ac-4577-9eba-df8408833ca7/xJvXenD9D1.lottie"
+      loop
+      autoplay
+      style={{ width: "100%", height: "auto" }}
+    />
+  </div>
+</div>
+
 
      
       <div>
