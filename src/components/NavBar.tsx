@@ -7,7 +7,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [animateOut, setAnimateOut] = useState(false);
   const [showNav, setShowNav] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0); // 👈 cambiar a useState
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,12 +16,12 @@ const NavBar = () => {
       if (currentScrollY === 0) {
         setShowNav(true);
       } else if (currentScrollY > lastScrollY) {
-        setShowNav(false); // bajando
+        setShowNav(false);
       } else {
-        setShowNav(true); // subiendo
+        setShowNav(true);
       }
 
-      setLastScrollY(currentScrollY); // actualizar estado
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -42,6 +42,12 @@ const NavBar = () => {
 
   const closeMenu = () => toggleMenu();
 
+  // 🔹 Función para ir al inicio
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (isOpen) closeMenu();
+  };
+
   return (
     <nav
       className={`
@@ -56,11 +62,17 @@ const NavBar = () => {
           className="w-20 cursor-pointer hover:bg-[#b2dc28] rounded-md"
           src="200.png"
           alt="icon-image"
+          onClick={scrollToTop} // 👈 también puedes usar el logo
         />
 
         {/* Menu desktop */}
         <ul className="hidden md:flex justify-center space-x-12">
-          <li className="cursor-pointer hover:text-[#b2dc28] transition-colors">Inicio</li>
+          <li
+            className="cursor-pointer hover:text-[#b2dc28] transition-colors"
+            onClick={scrollToTop} // 👈 Scroll suave
+          >
+            Inicio
+          </li>
           <li className="cursor-pointer hover:text-[#b2dc28] transition-colors">Sobre nosotros</li>
           <li className="cursor-pointer hover:text-[#b2dc28] transition-colors">Paginas</li>
           <li className="cursor-pointer hover:text-[#b2dc28] transition-colors">Contacto</li>
@@ -105,7 +117,10 @@ const NavBar = () => {
           </button>
 
           <ul className="flex flex-col items-center space-y-6">
-            <li onClick={closeMenu} className="cursor-pointer hover:text-[#b2dc28] transition-colors">
+            <li
+              onClick={scrollToTop} // 👈 También en móvil
+              className="cursor-pointer hover:text-[#b2dc28] transition-colors"
+            >
               Inicio
             </li>
             <li onClick={closeMenu} className="cursor-pointer hover:text-[#b2dc28] transition-colors">
