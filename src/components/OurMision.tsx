@@ -7,7 +7,7 @@ const BusinessSection: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
         <div>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-          Impulsamos el crecimiento de tu negocio.
+          Somos el crecimiento de tu negocio.
           </h2>
           <p className="text-lg text-gray-600 mb-8">
           En Código Fuente te ayudamos a llevar tu marca al siguiente nivel. Creamos estrategias digitales efectivas que aumentan tu visibilidad, atraen clientes y potencian tus ventas.

@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-  
-  font-family: sans-serif poppins;
+  font-family: 'Poppins', sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
