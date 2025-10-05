@@ -42,20 +42,20 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative flex justify-center items-center w-full md:w-1/2 overflow-visible scale-[1.5]">
+        <div className="relative flex justify-center items-center w-full md:w-1/2 overflow-visible scale-[1.5] md:scale-[2.5] mt-5">
   <DotLottieReact
     src="https://lottie.host/01326b74-3dce-49b4-b4b0-0f42b07f57c3/zSLbdfdh9T.lottie"
     loop
     autoplay
     style={{
-      width: "[20rem]",
+      width: "20rem",
       maxWidth: "600px",
       height: "13rem",
     }}
-    
     data-aos="fade-left"
   />
 </div>
+
 
       </div>
 

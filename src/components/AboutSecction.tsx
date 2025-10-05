@@ -7,7 +7,6 @@ type Service = {
   description: string;
 };
 
-
 const services: Service[] = [
   {
     id: 1,
@@ -31,32 +30,42 @@ const services: Service[] = [
 
 const AboutSection: React.FC = () => {
   return (
-    <section className=" mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-15 items-center" data-aos="fade-up">
-      
-      
-      <div className="flex justify-center md:justify-end w-full">
-  <div className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
-    <DotLottieReact
-      src="https://lottie.host/5e26bbcd-e9ac-4577-9eba-df8408833ca7/xJvXenD9D1.lottie"
-      loop
-      autoplay
-      style={{ width: "100%", height: "auto" }}
-    />
-  </div>
-</div>
+    <section
+      className="mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-15 items-center"
+      data-aos="fade-up"
+    >
+      {/* Imagen solo visible en pantallas medianas en adelante */}
+      <div className="hidden md:flex justify-center md:justify-end w-full">
+        <div className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
+          <DotLottieReact
+            src="https://lottie.host/5e26bbcd-e9ac-4577-9eba-df8408833ca7/xJvXenD9D1.lottie"
+            loop
+            autoplay
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
+      </div>
 
-
-     
       <div>
-      <h2 className="text-4xl font-bold mb-4">
+        <h2 className="text-4xl font-bold mb-4">
           Haz crecer tus <span className="text-[#c8ed4e]">ganancias</span> con una <br /> estrategia digital efectiva.
         </h2>
         <p className="text-gray-600 mb-8">
-        Hoy, estar en internet no es suficiente. Necesitas destacar. <br /> En <strong>Código Fuente</strong> desarrollamos estrategias digitales que impulsan tu visibilidad, <br /> generan confianza y multiplican tus ventas.
-
+          Hoy, estar en internet no es suficiente. Necesitas destacar. <br /> En <strong>Código Fuente</strong> desarrollamos estrategias digitales que impulsan tu visibilidad, <br /> generan confianza y multiplican tus ventas.
         </p>
 
-        
+        {/* Imagen solo visible en móviles */}
+        <div className="block md:hidden mb-10 scale-[1.1] m-0]">
+          <div className="w-full max-w-sm mx-auto">
+            <DotLottieReact
+              src="https://lottie.host/5e26bbcd-e9ac-4577-9eba-df8408833ca7/xJvXenD9D1.lottie"
+              loop
+              autoplay
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+        </div>
+
         <div className="space-y-9">
           {services.map((service) => (
             <div key={service.id}>
