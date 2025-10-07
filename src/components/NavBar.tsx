@@ -9,6 +9,16 @@ const NavBar = () => {
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  // 🔹 Función para hacer scroll suave a un id
+const scrollToSection = (id: string) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+  if (isOpen) closeMenu();
+};
+
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -73,7 +83,12 @@ const NavBar = () => {
           >
             Inicio
           </li>
-          <li className="cursor-pointer hover:text-[#b2dc28] transition-colors">Sobre nosotros</li>
+          <li
+  className="cursor-pointer hover:text-[#b2dc28] transition-colors"
+  onClick={() => scrollToSection("nosotros")}
+>
+  Sobre nosotros
+</li>
           <li className="cursor-pointer hover:text-[#b2dc28] transition-colors">Paginas</li>
           <li className="cursor-pointer hover:text-[#b2dc28] transition-colors">Contacto</li>
         </ul>
@@ -123,9 +138,14 @@ const NavBar = () => {
             >
               Inicio
             </li>
-            <li onClick={closeMenu} className="cursor-pointer hover:text-[#b2dc28] transition-colors">
-              Sobre nosotros
-            </li>
+            <li
+  onClick={() => scrollToSection("nosotros")}
+  className="cursor-pointer hover:text-[#b2dc28] transition-colors"
+>
+  Sobre nosotros
+</li>
+
+
             <li onClick={closeMenu} className="cursor-pointer hover:text-[#b2dc28] transition-colors">
               Paginas
             </li>

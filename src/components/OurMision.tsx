@@ -3,7 +3,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const BusinessSection: React.FC = () => {
   return (
-    <section className="bg-gray-200 w-full relative">
+    <section id='nosotros' className="bg-gray-200 w-full relative">
       <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
         <div>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
