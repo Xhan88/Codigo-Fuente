@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaReact, FaWordpress } from "react-icons/fa";
 import {
@@ -9,9 +10,9 @@ import {
 } from "react-icons/si";
 
 type TechStack = {
-  icon: JSX.Element;
-  name: string;
-};
+    icon: ReactNode;
+    name: string;
+  };
 
 type Project = {
   id: number;
