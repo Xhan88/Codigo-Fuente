@@ -9,7 +9,6 @@ const NavBar = () => {
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  // 🔹 Función para hacer scroll suave a un id
 const scrollToSection = (id: string) => {
   const section = document.getElementById(id);
   if (section) {
@@ -52,7 +51,6 @@ const scrollToSection = (id: string) => {
 
   const closeMenu = () => toggleMenu();
 
-  // 🔹 Función para ir al inicio
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     if (isOpen) closeMenu();
@@ -67,42 +65,50 @@ const scrollToSection = (id: string) => {
       `}
     >
       <div className="flex justify-between items-center px-6 py-3 max-w-[1400px] mx-auto">
-        {/* Logo */}
+
         <img
           className="w-20 cursor-pointer hover:bg-[#b2dc28] rounded-md"
           src="200.png"
           alt="icon-image"
-          onClick={scrollToTop} // 👈 también puedes usar el logo
+          onClick={scrollToTop}
         />
 
         {/* Menu desktop */}
         <ul className="hidden md:flex justify-center space-x-12">
           <li
-            className="cursor-pointer hover:text-[#b2dc28] transition-colors"
-            onClick={scrollToTop} // 👈 Scroll suave
-          >
-            Inicio
+          className="cursor-pointer hover:text-[#b2dc28] transition-colors"
+          onClick={scrollToTop} 
+          >Inicio
           </li>
+
           <li
-  className="cursor-pointer hover:text-[#b2dc28] transition-colors"
-  onClick={() => scrollToSection("nosotros")}
->
-  Sobre nosotros
-</li>
-          <li className="cursor-pointer hover:text-[#b2dc28] transition-colors">Paginas</li>
-          <li className="cursor-pointer hover:text-[#b2dc28] transition-colors">Contacto</li>
+          className="cursor-pointer hover:text-[#b2dc28] transition-colors"
+          onClick={() => scrollToSection("nosotros")}
+          >Sobre nosotros
+          </li>
+
+          <li 
+          className="cursor-pointer hover:text-[#b2dc28] transition-colors"
+          onClick={() => scrollToSection("projects")}
+          >Paginas</li>
+          
+          <li 
+          className="cursor-pointer hover:text-[#b2dc28] transition-colors"
+          onClick={() => scrollToSection("contact")}
+          >Contacto</li>
+          
         </ul>
 
-        {/* Redes + botón desktop */}
         <div className="hidden md:flex items-center space-x-4">
           <FontAwesomeIcon icon={faFacebook} className="text-blue-600 text-xl cursor-pointer" />
           <FontAwesomeIcon icon={faInstagram} className="text-purple-300 text-xl cursor-pointer" />
-          <button className="border border-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-[rgb(24,18,146)] transition">
+          <button className="border border-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-[rgb(24,18,146)] transition"
+          onClick={() => scrollToSection("contact")}
+          >
             Contáctanos
           </button>
         </div>
 
-        {/* Hamburguesa móvil */}
         <div className="md:hidden">
           <button onClick={toggleMenu}>
             <FontAwesomeIcon
@@ -113,7 +119,6 @@ const scrollToSection = (id: string) => {
         </div>
       </div>
 
-      {/* Overlay menú móvil */}
       {isOpen && (
         <div
           className={`
@@ -133,23 +138,25 @@ const scrollToSection = (id: string) => {
 
           <ul className="flex flex-col items-center space-y-6">
             <li
-              onClick={scrollToTop} // 👈 También en móvil
+              onClick={scrollToTop} 
               className="cursor-pointer hover:text-[#b2dc28] transition-colors"
             >
               Inicio
             </li>
             <li
-  onClick={() => scrollToSection("nosotros")}
-  className="cursor-pointer hover:text-[#b2dc28] transition-colors"
->
-  Sobre nosotros
-</li>
+              onClick={() => scrollToSection("nosotros")}
+              className="cursor-pointer hover:text-[#b2dc28] transition-colors"
+            >
+              Sobre nosotros
+            </li>
 
 
-            <li onClick={closeMenu} className="cursor-pointer hover:text-[#b2dc28] transition-colors">
+            <li onClick={() => scrollToSection("projects")} className="cursor-pointer hover:text-[#b2dc28] transition-colors">
               Paginas
             </li>
-            <li onClick={closeMenu} className="cursor-pointer hover:text-[#b2dc28] transition-colors">
+
+
+            <li onClick={() => scrollToSection("contact")} className="cursor-pointer hover:text-[#b2dc28] transition-colors">
               Contacto
             </li>
           </ul>
