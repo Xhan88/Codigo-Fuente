@@ -1,5 +1,7 @@
 import React from "react";
 import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 
 const TikTokIcon = ({ size = 20, className = "" }) => (
   <svg
@@ -100,6 +102,26 @@ const Footer: React.FC = () => {
       >
         ↑
       </a>
+
+      <div
+  onClick={() =>
+    window.open(
+      "https://wa.me/XXXXXXXXXXX", // ← aquí pones tu número con código de país sin +
+      "_blank"
+    )
+  }
+  className="fixed bottom-6 left-6 cursor-pointer z-50"
+>
+  <DotLottieReact
+    src="https://lottie.host/5ec66ffc-c57a-42d2-a8f7-bf12ebbef7cb/62BHXl3eae.lottie"
+    loop
+    autoplay
+    style={{
+      width: "100px",
+      height: "100px",
+    }}
+  />
+</div>
     </footer>
   );
 };

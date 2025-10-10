@@ -98,7 +98,7 @@ const packages: Package[] = [
 
 const PricingPackages: React.FC = () => {
   return (
-    <section className="bg-gray-200 py-16"  data-aos="fade-up">
+    <section id="price-proyects" className="bg-gray-200 py-16"  data-aos="fade-up">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Paquetes de Desarrollo Web
