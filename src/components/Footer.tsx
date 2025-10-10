@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
       <div
   onClick={() =>
     window.open(
-      "https://wa.me/XXXXXXXXXXX", // ← aquí pones tu número con código de país sin +
+      "https://wa.link/dcz14l", // ← aquí pones tu número con código de país sin +
       "_blank"
     )
   }
