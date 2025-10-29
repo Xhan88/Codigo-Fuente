@@ -100,8 +100,14 @@ const scrollToSection = (id: string) => {
         </ul>
 
         <div className="hidden md:flex items-center space-x-4">
+          <a href="https://www.facebook.com/profile.php?id=61581919241061" target="_blank">
           <FontAwesomeIcon icon={faFacebook} className="text-blue-600 text-xl cursor-pointer" />
+          </a>
+
+          <a href="https://www.instagram.com/codigofuentecm/" target="_blank">
           <FontAwesomeIcon icon={faInstagram} className="text-purple-300 text-xl cursor-pointer" />
+          </a>
+
           <button className="border border-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-[rgb(24,18,146)] transition"
           onClick={() => scrollToSection("contact")}
           >
