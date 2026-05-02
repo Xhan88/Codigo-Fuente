@@ -20,7 +20,7 @@ const Header: React.FC = () => {
   return (
     <>
       <NavBar />
-      <header className="relative bg-[rgb(24,18,146)] h-[58rem] sm:h-[55rem] md:h-[45rem] text-white overflow-hidden">
+      <header className="relative bg-[#0B1F3A] h-[58rem] sm:h-[55rem] md:h-[45rem] text-white overflow-hidden">
         <div className="mt-20 max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-20 gap-10">
           <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-xl">
             <h1
@@ -31,9 +31,9 @@ const Header: React.FC = () => {
             </h1>
 
             <p className="text-lg mb-8 max-w-lg" data-aos="fade-up">
-              Construimos lo que tu negocio necesita para crecer.
+            Creamos páginas web estratégicas conectadas a WhatsApp
               <span className="block mt-2">
-                Transformamos ideas en resultados digitales.
+              que convierten visitas en clientes reales.
               </span>
             </p>
 
@@ -53,7 +53,7 @@ const Header: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative flex justify-center items-center w-full md:w-1/2 overflow-visible scale-[1.5] md:scale-[2.5] mt-5">
+          <div className="z-50 relative flex justify-center items-center w-full md:w-1/2 overflow-visible scale-[1.5] md:scale-[2.5] mt-5">
             <DotLottieReact
               src="https://lottie.host/01326b74-3dce-49b4-b4b0-0f42b07f57c3/zSLbdfdh9T.lottie"
               loop

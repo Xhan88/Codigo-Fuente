@@ -5,14 +5,14 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 const HeroSection: React.FC = () => {
   return (
     <section className="relative flex flex-col items-center justify-center text-center text-white py-32 overflow-hidden">
-      {/* Fondo */}
+
       <div
         className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1920&q=80')]
         bg-cover bg-center bg-fixed opacity-80"
       ></div>
       <div className="absolute inset-0 bg-blue-700/70"></div>
 
-      {/* Contenido */}
+   
       <motion.div
         className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center justify-center"
         initial={{ opacity: 0, y: 40 }}
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
           diseño web y marketing moderno para alcanzar tus metas.
         </p>
 
-        {/* Animación Lottie centrada */}
+    
         <div className="flex justify-center items-center mt-8 scale-[2]">
           <DotLottieReact
             src="https://lottie.host/f08c6659-76d4-48a4-a35d-e159e5e4b177/edF8vot912.lottie"
