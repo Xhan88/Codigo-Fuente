@@ -34,7 +34,6 @@ const AboutSection: React.FC = () => {
       className="mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-15 items-center"
       data-aos="fade-up"
     >
-      {/* Imagen solo visible en pantallas medianas en adelante */}
       <div className="hidden md:flex justify-center md:justify-end w-full">
         <div className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
           <DotLottieReact
@@ -54,7 +53,6 @@ const AboutSection: React.FC = () => {
           Hoy, estar en internet no es suficiente. Necesitas destacar. <br /> En <strong>Código Fuente</strong> desarrollamos estrategias digitales que impulsan tu visibilidad, <br /> generan confianza y multiplican tus ventas.
         </p>
 
-        {/* Imagen solo visible en móviles */}
         <div className="block md:hidden mb-10 scale-[1.1] m-0]">
           <div className="w-full max-w-sm mx-auto">
             <DotLottieReact

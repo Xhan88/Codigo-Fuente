@@ -45,7 +45,6 @@ const HeroSection: React.FC = () => {
         </div>
       </motion.div>
 
-      {/* Gradiente inferior */}
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-blue-700 to-transparent"></div>
     </section>
   );

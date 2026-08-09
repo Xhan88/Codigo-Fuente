@@ -7,6 +7,8 @@ import {
   SiCss3,
   SiElementor,
   SiFirebase,
+  SiTypescript,
+  SiTailwindcss,
 } from "react-icons/si";
 
 type TechStack = {
@@ -30,7 +32,7 @@ const projects: Project[] = [
     description:
       "Sitio web diseñado para una carnicería local. Presenta los cortes más populares, promociones y contacto directo con WhatsApp.",
     image: '/carniceria.png',
-    link: "https://carniceriamatamoros.codigomartinez.com/", // Cambia al dominio real
+    link: "https://carniceriamatamoros.codigomartinez.com/", 
     stack: [
       { icon: <FaWordpress className='text-blue-600' />, name: "WordPress" },
       { icon: <SiElementor className='text-pink-500' />, name: "Elementor" },
@@ -42,7 +44,7 @@ const projects: Project[] = [
     description:
       "Landing page moderna y responsive para una taquería familiar. Muestra menú, ubicación y llamada a la acción para pedidos.",
     image: '/taqueria.png',
-    link: "https://delabuelotaqueria.codigomartinez.com/", // Cambia al dominio real
+    link: "https://delabuelotaqueria.codigomartinez.com/", 
     stack: [
       { icon: <FaWordpress className='text-blue-600' />, name: "WordPress" },
       { icon: <SiElementor className='text-pink-500' />, name: "Elementor" },
@@ -67,13 +69,15 @@ const projects: Project[] = [
     title: "Pedicure Susy",
     description:
       "Landing page profesional para Pedicure Clínico. Desarrollada con React, MUI y CSS. Presenta servicios, valores y contacto directo.",
-    image:'/pedicure.png',
+    image:'/pizzeria.png',
     link: "https://belanapizzeria.com",
     stack: [
       { icon: <FaReact className='text-sky-500' />, name: "React" },
-      { icon: <SiMui className='text-blue-700' />, name: "MUI" },
-      { icon: <SiCss3 className='text-blue-500' />, name: "CSS" },
-      { icon: <SiFirebase className='text-yellow-500' />, name: "Firebase" },
+      { icon: <SiTypescript className="text-blue-600" />, name: "TypeScript" },
+      { icon: <SiTailwindcss className="text-cyan-400" />, name: "Tailwind CSS" },
+   
+      
+
     ],
   },
 ];
@@ -115,7 +119,7 @@ const Projects: React.FC = () => {
                 </p>
               </div>
 
-              {/* Stack */}
+      
               <div className='flex flex-wrap gap-3 mb-4'>
                 {project.stack.map((tech, index) => (
                   <div

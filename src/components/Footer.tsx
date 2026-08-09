@@ -19,9 +19,7 @@ const TikTokIcon = ({ size = 20, className = "" }) => (
 const Footer: React.FC = () => {
   return (
     <footer className="bg-white text-gray-700 pt-16">
-      {/* Contenido principal */}
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 text-sm">
-        {/* About */}
         <div>
           <h3 className="text-lg font-semibold mb-4 text-black">ABOUT US</h3>
           <ul className="space-y-2 text-gray-500">
@@ -33,7 +31,6 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Services */}
         <div>
           <h3 className="text-lg font-semibold mb-4 text-black">SERVICES</h3>
           <ul className="space-y-2 text-gray-500">
@@ -45,7 +42,6 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Support */}
         <div>
           <h3 className="text-lg font-semibold mb-4 text-black">SUPPORT</h3>
           <ul className="space-y-2 text-gray-500">
@@ -57,7 +53,6 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Follow Us */}
         <div>
           <h3 className="text-lg font-semibold mb-4 text-black">FOLLOW US</h3>
           <p className="text-gray-500 mb-4">
@@ -83,10 +78,8 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Línea divisoria */}
       <div className="border-t border-gray-200 mt-12"></div>
 
-      {/* Copyright */}
       <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
         <p>© {new Date().getFullYear()} Código Fuente. Todos los derechos reservados.</p>
         <p className="flex items-center gap-1 mt-2 md:mt-0">
@@ -95,7 +88,6 @@ const Footer: React.FC = () => {
         </p>
       </div>
 
-      {/* Botón scroll-top */}
       <a
         href="#top"
         className="fixed bottom-6 right-6 bg-[#b2dc28] text-white p-3 rounded-full shadow-lg hover:bg-gray-800 transition-all"
@@ -106,7 +98,7 @@ const Footer: React.FC = () => {
       <div
   onClick={() =>
     window.open(
-      "https://wa.link/dcz14l", // ← aquí pones tu número con código de país sin +
+      "https://wa.link/dcz14l",
       "_blank"
     )
   }
