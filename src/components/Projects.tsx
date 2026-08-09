@@ -62,6 +62,20 @@ const projects: Project[] = [
       { icon: <SiFirebase className='text-yellow-500' />, name: "Firebase" },
     ],
   },
+  {
+    id: 3,
+    title: "Pedicure Susy",
+    description:
+      "Landing page profesional para Pedicure Clínico. Desarrollada con React, MUI y CSS. Presenta servicios, valores y contacto directo.",
+    image:'/pedicure.png',
+    link: "https://belanapizzeria.com",
+    stack: [
+      { icon: <FaReact className='text-sky-500' />, name: "React" },
+      { icon: <SiMui className='text-blue-700' />, name: "MUI" },
+      { icon: <SiCss3 className='text-blue-500' />, name: "CSS" },
+      { icon: <SiFirebase className='text-yellow-500' />, name: "Firebase" },
+    ],
+  },
 ];
 
 const Projects: React.FC = () => {
