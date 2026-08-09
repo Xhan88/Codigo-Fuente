@@ -65,10 +65,10 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 3,
-    title: "Pedicure Susy",
+    id: 4,
+    title: "Pizzería BelAna",
     description:
-      "Landing page profesional para Pedicure Clínico. Desarrollada con React, MUI y CSS. Presenta servicios, valores y contacto directo.",
+      "Sitio web moderno y responsivo para BelAna Pizzería, desarrollado con React y TypeScript para mostrar su menú, esencia, ubicación y facilitar el contacto.",
     image:'/pizzeria.png',
     link: "https://belanapizzeria.com",
     stack: [
