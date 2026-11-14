@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="bg-[#D8DADA] border-t border-[#141414]/10 pt-16 pb-10">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-[#141414]/10">
-        <Logo variant="dark" />
+        <Logo />
 
         <div className="flex flex-wrap justify-center gap-8 text-sm font-medium text-[#141414]">
           {NAV_LINKS.map((link) => (
