@@ -1,30 +1,40 @@
-import AboutSection from "./components/AboutSecction"
-import ContactSection from "./components/ContactSection"
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import HeroSection from "./components/HeroSection"
-import OtherServices from "./components/OtherServices"
-import BusinessSection from "./components/OurMision"
-import PricingPackages from "./components/PricingPackages"
-import Projects from "./components/Projects"
-import Service from "./components/Service"
 
+import { Navbar } from './components/layout/Navbar';
+import { Hero } from './sections/Hero';
+import { Services } from './sections/Services';
+import { Portfolio } from './sections/Portfolio';
+import { About } from './sections/About';
+import { MetricsBanner } from './sections/MetricsBanner';
+import { Process } from './sections/Process';
+import { Testimonials } from './sections/Testimonials';
+import { CtaBanner } from './sections/CtaBanner';
+import { Footer } from './components/layout/Footer';
 
-const App = () => {
+export default function App() {
   return (
-    <>
-       <Header />
-       <Service />
-       <BusinessSection />
-       <AboutSection />
-       <OtherServices />
-       <Projects />
-       <PricingPackages />
-       <ContactSection />
-       <HeroSection />
-       <Footer />
-    </>
-  )
-}
+    <div className="relative isolate min-h-screen bg-[#9d9d9d] text-[#141414] selection:bg-[#2BE88E] selection:text-[#141414] overflow-x-hidden">
 
-export default App
+      {/* Fondo técnico de puntitos */}
+      <div
+        aria-hidden="true"
+        className="bg-cf-dots pointer-events-none fixed inset-0 z-0"
+      />
+
+      {/* Contenido de la página */}
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <Services />
+          <Portfolio />
+          <About />
+          <MetricsBanner />
+          <Process />
+          <Testimonials />
+          <CtaBanner />
+        </main>
+        <Footer />
+      </div>
+    </div>
+  );
+}

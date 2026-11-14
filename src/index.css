@@ -2,10 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Poppins', sans-serif;
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #545454;
+    color: #141414;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
+/* Clases de apoyo para los colores de Código Fuente si los prefieres directos */
+.bg-cf-brand {
+  background-color: #2BE88E;
+}
+
+.text-cf-brand {
+  color: #2BE88E;
+}
+
+.border-cf-brand {
+  border-color: #2BE88E;
+}
+
+
+/* Fondo técnico de Código Fuente */
+.bg-cf-dots {
+  background-image: radial-gradient(
+    rgba(20, 20, 20, 0.35) 0.8px,
+    transparent 0.8px
+  );
+  background-size: 26px 26px;
+}
+
+
+/* Entrada suave de elementos */
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-reveal {
+  animation: hero-rise 0.9s ease-out both;
+}
+
+.hero-reveal-delay {
+  animation-delay: 0.25s;
+}
+
+/* Cursor de escritura */
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: cursor-blink 0.8s steps(2, start) infinite;
+}
+
+/* Celular flotante */
+@keyframes device-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.device-float {
+  animation: device-float 4s ease-in-out infinite;
 }
