@@ -1,5 +1,23 @@
 import { SERVICES } from '../data/siteData';
 import { CornerBrackets } from '../components/ui/CornerBrackets';
+import {
+  Code2,
+  ShoppingCart,
+  Megaphone,
+  PanelsTopLeft,
+  Fingerprint,
+  Workflow,
+  Sparkles,
+} from 'lucide-react';
+
+const serviceIcons = {
+  'desarrollo-web': Code2,
+  'tiendas-online': ShoppingCart,
+  'marketing-digital': Megaphone,
+  'diseno-web': PanelsTopLeft,
+  branding: Fingerprint,
+  'soluciones-digitales': Workflow,
+};
 
 export function Services() {
   return (
@@ -29,9 +47,14 @@ export function Services() {
   >
                 <CornerBrackets size={10} />
                 <div>
-                  <div className="w-10 h-10 rounded-lg bg-[#141414] text-[#2BE88E] flex items-center justify-center font-bold mb-4 group-hover:bg-[#2BE88E] group-hover:text-[#141414] transition-colors">
-                    ✦
-                  </div>
+                 <div className="w-10 h-10 rounded-lg bg-[#141414] text-[#2BE88E] flex items-center justify-center mb-4 group-hover:bg-[#2BE88E] group-hover:text-[#141414] transition-colors">
+  {(() => {
+    const Icon =
+      serviceIcons[service.id as keyof typeof serviceIcons] ?? Sparkles;
+
+    return <Icon size={20} strokeWidth={1.8} />;
+  })()}
+</div>
                   <h3 className="text-lg font-bold text-[#141414] mb-2">{service.title}</h3>
                   <p className="text-sm text-[#4A4D4D]">{service.description}</p>
                 </div>

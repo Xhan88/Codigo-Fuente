@@ -8,7 +8,8 @@ export function Logo({ className = '' }: LogoProps) {
     <img
       src="/200.png"
       alt="Código Fuente"
-      className={`h-20 bg-[#2BE88E] w-auto object-contain ${className}`}
+      className={`h-20  w-auto object-contain ${className}`}
     />
   );
 }
+     
