@@ -44,7 +44,7 @@ export function Navbar() {
       }}
 className="fixed top-0 left-0 w-full z-50 bg-[#9d9d9d]/75 backdrop-blur-md border-b border-[#141414]/10"    >
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="#inicio" className="focus:outline-none">
+        <a href="#inicio" className="focus:outline-none mt-1 ">
           <motion.div layoutId="codigo-fuente-logo">
             <Logo />
           </motion.div>
