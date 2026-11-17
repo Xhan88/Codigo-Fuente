@@ -12,22 +12,36 @@ export const PROJECTS: ProjectItem[] = [
     id: "carniceria",
     title: "Carnicería Matamoros",
     category: "E-commerce & Branding",
-    image: "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=800&q=80",
+    image: "./public/carniceria.png",
     description: "Plataforma de pedidos locales y catálogo digital de cortes premium.",
   },
   {
     id: "pizzeria",
-    title: "Pizzería Imperium",
+    title: "Pizzería Bel-Ana",
     category: "Web App & Pedidos Online",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80",
+    image: "./public/pizzeria.png",
     description: "Sistema web interactivo con menú dinámico y conversión directa a WhatsApp.",
   },
   {
-    id: "veterinaria",
-    title: "Diseño y Veterinaria",
+    id: "adopcion-mascotas",
+    title: "Diseño y Refujio",
     category: "Identidad & Sitio Corporativo",
-    image: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80",
+    image: "./public/patas-pirque.png",
     description: "Rediseño integral de marca y sistema de agendamiento de citas.",
+  },
+  {
+    id: "fiber-gomser",
+    title: "Soluciones textiles",
+    category: "Identidad & Sitio Corporativo",
+    image: "./public/fiber-gomser.png",
+    description: "Rediseño integral de marca y sistema de agendamiento de citas.",
+  },
+  {
+    id: "taqueria-del-abuelo",
+    title: "Taquería del Abuelo",
+    category: "E-commerce & Branding",
+    image: "./public/taqueria.png",
+    description: "Plataforma de pedidos locales y catálogo digital de tacos tradicionales.",
   },
 ];
 
@@ -111,7 +125,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
   {
     quote: "Aquí irá otro comentario real sobre el proyecto y sus resultados.",
     author: "Cliente de demostración",
-    company: "Pizzería Imperium",
+    company: "Pizzería Belana",
     avatar: "https://i.pravatar.cc/150?img=47",
   },
   {
