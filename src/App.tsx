@@ -56,7 +56,7 @@ export default function App() {
   }}
 >
   <main>
-    <Hero />
+    <Hero startTyping={showContent} />
     <Services />
     <Portfolio />
     <About />

@@ -4,6 +4,60 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 type Scene = 'code' | 'deploy' | 'website';
 
+type WebsiteVisual =
+  | {
+      id: string;
+      kind: 'photo';
+      src: string;
+      alt: string;
+    }
+  | {
+      id: string;
+      kind: 'illustration';
+      accent: string;
+      secondary: string;
+    };
+
+const websiteVisuals: WebsiteVisual[] = [
+  {
+    id: 'architecture',
+    kind: 'photo',
+    src: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=85',
+    alt: 'Interiorismo moderno',
+  },
+  {
+    id: 'restaurant',
+    kind: 'photo',
+    src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=85',
+    alt: 'Experiencia gastronómica',
+  },
+  {
+    id: 'product',
+    kind: 'photo',
+    src: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=85',
+    alt: 'Fotografía de producto',
+  },
+  {
+    id: 'creative',
+    kind: 'illustration',
+    accent: '#2BE88E',
+    secondary: '#A78BFA',
+  },
+  {
+    id: 'technology',
+    kind: 'illustration',
+    accent: '#60A5FA',
+    secondary: '#2BE88E',
+  },
+  {
+    id: 'digital',
+    kind: 'illustration',
+    accent: '#FBBF24',
+    secondary: '#F472B6',
+  },
+];
+
+
 const codeLines = [
   { code: 'import React from "react";', color: 'text-purple-400' },
   { code: 'import { motion } from "framer-motion";', color: 'text-purple-400' },
@@ -25,6 +79,10 @@ const codeLines = [
 
 export function About() {
   const [scene, setScene] = useState<Scene>('code');
+  
+  const [visualIndex, setVisualIndex] = useState(0);
+
+const currentVisual = websiteVisuals[visualIndex];
 
   useEffect(() => {
     const duration =
@@ -42,6 +100,20 @@ export function About() {
 
     return () => clearTimeout(timer);
   }, [scene]);
+
+  useEffect(() => {
+  if (scene !== 'website') return;
+
+  const nextIndex = Math.floor(
+    Math.random() * websiteVisuals.length
+  );
+
+  setVisualIndex((current) =>
+    nextIndex === current
+      ? (nextIndex + 1) % websiteVisuals.length
+      : nextIndex
+  );
+}, [scene]);
 
   return (
     <section id="nosotros" className="py-20 bg-[#C8CACA]/50 border-t border-b border-[#141414]/10">
@@ -270,44 +342,166 @@ export function About() {
                         </div>
                       </motion.div>
 
-                      <div className="max-w-[330px]">
-                        <motion.span
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          transition={{ delay: 0.6 }}
-                          className="text-[#2BE88E] text-[8px] sm:text-[10px] tracking-[0.25em] uppercase font-bold"
-                        >
-                          Diseñado para crecer
-                        </motion.span>
 
-                        <motion.h3
-                          initial={{ opacity: 0, y: 15 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.8, duration: 0.7 }}
-                          className="text-white text-2xl sm:text-4xl font-black leading-[1.05] mt-3"
-                        >
-                          Ideas que se convierten en
-                          <span className="text-[#2BE88E]"> resultados.</span>
-                        </motion.h3>
+<div className="flex items-center gap-3 sm:gap-5">
 
-                        <motion.p
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          transition={{ delay: 1.1 }}
-                          className="text-white/50 text-[8px] sm:text-[10px] mt-3 leading-relaxed"
-                        >
-                          Una experiencia digital creada para conectar con tus clientes y hacer crecer tu negocio.
-                        </motion.p>
+  {/* Website text */}
+  <div className="w-[62%] min-w-0">
 
-                        <motion.div
-                          initial={{ opacity: 0, y: 8 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 1.3 }}
-                          className="mt-4 inline-flex items-center gap-2 bg-[#2BE88E] text-[#141414] px-4 py-2 rounded text-[8px] sm:text-[10px] font-bold"
-                        >
-                          CONOCE MÁS <span>→</span>
-                        </motion.div>
-                      </div>
+    <motion.span
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.6 }}
+      className="text-[#2BE88E] text-[8px] sm:text-[10px] tracking-[0.25em] uppercase font-bold"
+    >
+      Diseñado para crecer
+    </motion.span>
+
+    <motion.h3
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.8, duration: 0.7 }}
+      className="text-white text-xl sm:text-3xl font-black leading-[1.05] mt-3"
+    >
+      Ideas que se convierten en
+      <span className="text-[#2BE88E]"> resultados.</span>
+    </motion.h3>
+
+    <motion.p
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1.1 }}
+      className="text-white/50 text-[8px] sm:text-[10px] mt-3 leading-relaxed"
+    >
+      Una experiencia digital creada para conectar con tus clientes y hacer crecer tu negocio.
+    </motion.p>
+
+    <motion.div
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 1.3 }}
+      className="mt-4 inline-flex items-center gap-2 bg-[#2BE88E] text-[#141414] px-3 py-2 rounded text-[8px] sm:text-[10px] font-bold"
+    >
+      CONOCE MÁS <span>→</span>
+    </motion.div>
+
+  </div>
+
+  {/* Random visual */}
+  <motion.div
+    key={currentVisual.id}
+    initial={{ opacity: 0, x: 15, scale: 0.92 }}
+    animate={{ opacity: 1, x: 0, scale: 1 }}
+    transition={{ delay: 1.2, duration: 0.7 }}
+    className="w-[38%] min-w-0 aspect-[4/5] rounded-xl overflow-hidden border border-white/10 shadow-xl bg-[#1c2922] relative"
+  >
+
+    {currentVisual.kind === 'photo' ? (
+      <img
+        src={currentVisual.src}
+        alt={currentVisual.alt}
+        className="w-full h-full object-cover"
+      />
+    ) : (
+      <svg
+        viewBox="0 0 240 300"
+        className="w-full h-full"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient
+            id={`gradient-${currentVisual.id}`}
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1"
+          >
+            <stop offset="0%" stopColor={currentVisual.accent} />
+            <stop offset="100%" stopColor={currentVisual.secondary} />
+          </linearGradient>
+        </defs>
+
+        <rect width="240" height="300" fill="#17251E" />
+
+        <circle
+          cx="190"
+          cy="65"
+          r="75"
+          fill={currentVisual.accent}
+          opacity="0.12"
+        />
+
+        <circle
+          cx="40"
+          cy="240"
+          r="65"
+          fill={currentVisual.secondary}
+          opacity="0.12"
+        />
+
+        <rect
+          x="35"
+          y="55"
+          width="170"
+          height="190"
+          rx="24"
+          fill={`url(#gradient-${currentVisual.id})`}
+          opacity="0.15"
+        />
+
+        <path
+          d="M70 190 L120 95 L170 190 Z"
+          fill={currentVisual.accent}
+          opacity="0.9"
+        />
+
+        <circle
+          cx="120"
+          cy="115"
+          r="28"
+          fill={currentVisual.secondary}
+        />
+
+        <rect
+          x="65"
+          y="205"
+          width="110"
+          height="9"
+          rx="5"
+          fill="white"
+          opacity="0.8"
+        />
+
+        <rect
+          x="85"
+          y="222"
+          width="70"
+          height="5"
+          rx="3"
+          fill="white"
+          opacity="0.3"
+        />
+
+        <circle
+          cx="190"
+          cy="250"
+          r="8"
+          fill={currentVisual.accent}
+        />
+
+        <circle
+          cx="48"
+          cy="65"
+          r="5"
+          fill={currentVisual.secondary}
+        />
+      </svg>
+    )}
+
+  </motion.div>
+
+</div>
+
 
                       <motion.div
                         initial={{ opacity: 0, y: 12 }}

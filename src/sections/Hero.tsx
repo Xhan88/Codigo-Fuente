@@ -1,45 +1,33 @@
 
 import { useEffect, useState } from 'react';
 
-export function Hero() {
+interface HeroProps {
+  startTyping: boolean;
+}
+
+export function Hero({ startTyping }: HeroProps) {
   const phrase = 'Creamos negocios que venden más.';
   const [typedText, setTypedText] = useState('');
 
   useEffect(() => {
+    if (!startTyping) return;
+
     let index = 0;
-    let deleting = false;
     let timeout: ReturnType<typeof setTimeout>;
 
     const type = () => {
-      if (!deleting) {
-        index++;
-        setTypedText(phrase.slice(0, index));
+      index++;
+      setTypedText(phrase.slice(0, index));
 
-        if (index === phrase.length) {
-          deleting = true;
-          timeout = setTimeout(type, 1800);
-          return;
-        }
-
+      if (index < phrase.length) {
         timeout = setTimeout(type, 75);
-      } else {
-        index--;
-        setTypedText(phrase.slice(0, index));
-
-        if (index === 0) {
-          deleting = false;
-          timeout = setTimeout(type, 500);
-          return;
-        }
-
-        timeout = setTimeout(type, 40);
       }
     };
 
     timeout = setTimeout(type, 75);
 
     return () => clearTimeout(timeout);
-  }, []);
+  }, [startTyping]);
 
   return (
     <section id="inicio" className="relative pt-12 pb-20 overflow-hidden">
