@@ -5,6 +5,7 @@ export interface ProjectItem {
   category: string;
   image: string;
   description: string;
+  url: string;
 }
 
 export const PROJECTS: ProjectItem[] = [
@@ -14,6 +15,7 @@ export const PROJECTS: ProjectItem[] = [
     category: "E-commerce & Branding",
     image: "/carniceria.png",
     description: "Plataforma de pedidos locales y catálogo digital de cortes premium.",
+    url: "https://carniceriamatamoros.codigomartinez.com/"
   },
   {
     id: "pizzeria",
@@ -21,6 +23,7 @@ export const PROJECTS: ProjectItem[] = [
     category: "Web App & Pedidos Online",
     image: "/pizzeria.png",
     description: "Sistema web interactivo con menú dinámico y conversión directa a WhatsApp.",
+    url: "https://belanapizzeria.com"
   },
   {
     id: "adopcion-mascotas",
@@ -28,6 +31,7 @@ export const PROJECTS: ProjectItem[] = [
     category: "Identidad & Sitio Corporativo",
     image: "/patas-pirque.png",
     description: "Rediseño integral de marca y sistema de agendamiento de citas.",
+    url: "https://match-adopcion-mascotas.vercel.app/"
   },
   {
     id: "fiber-gomser",
@@ -35,6 +39,7 @@ export const PROJECTS: ProjectItem[] = [
     category: "Identidad & Sitio Corporativo",
     image: "/fiber-gomser.png",
     description: "Rediseño integral de marca y sistema de agendamiento de citas.",
+    url: "https://fiber-gomser.vercel.app/"
   },
   {
     id: "taqueria-del-abuelo",
@@ -42,6 +47,7 @@ export const PROJECTS: ProjectItem[] = [
     category: "E-commerce & Branding",
     image: "/taqueria.png",
     description: "Plataforma de pedidos locales y catálogo digital de tacos tradicionales.",
+    url: "https://delabuelotaqueria.codigomartinez.com/"
   },
 ];
 

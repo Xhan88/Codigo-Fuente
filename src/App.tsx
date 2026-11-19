@@ -11,7 +11,7 @@ import { Portfolio } from './sections/Portfolio';
 import { About } from './sections/About';
 import { MetricsBanner } from './sections/MetricsBanner';
 import { Process } from './sections/Process';
-import { Testimonials } from './sections/Testimonials';
+import { Pricing } from './sections/Pricing';
 import { CtaBanner } from './sections/CtaBanner';
 import { Footer } from './components/layout/Footer';
 
@@ -62,7 +62,7 @@ export default function App() {
     <About />
     <MetricsBanner />
     <Process />
-    <Testimonials />
+    <Pricing />
     <CtaBanner />
   </main>
 

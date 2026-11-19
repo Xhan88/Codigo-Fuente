@@ -33,15 +33,16 @@ export function Portfolio() {
           >
             <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#2BE88E_1px,transparent_1px)] [background-size:16px_16px]" />
 
-            <div className="relative z-10 bg-[#0a0a0a] rounded-xl aspect-[16/10] overflow-hidden">
+            <div className="relative z-10 bg-[#0a0a0a] rounded-xl aspect-[4/5] sm:aspect-[16/10] overflow-hidden">
 
               {/* Fixed Brand Header */}
-              <div className="absolute top-0 left-0 right-0 z-30 p-6 sm:p-8 bg-gradient-to-b from-black/80 to-transparent">
-                <span className="text-[#2BE88E] text-2xl sm:text-3xl font-black tracking-wider">
+              <div className="absolute top-0 left-0 right-0 z-30 px-4 py-4 sm:p-8 bg-gradient-to-b from-black/90 via-black/50 to-transparent">
+
+                <span className="text-[#2BE88E] text-base sm:text-3xl font-black tracking-wider block">
                   CÓDIGO FUENTE
                 </span>
 
-                <p className="text-white/60 text-xs mt-1">
+                <p className="text-white/70 text-[9px] sm:text-xs mt-1 max-w-[220px] sm:max-w-none">
                   Infraestructura web escalable y moderna
                 </p>
               </div>
@@ -67,16 +68,17 @@ export function Portfolio() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent" />
 
                     {/* Project Information */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-                      <span className="text-[#2BE88E] text-[10px] uppercase tracking-[0.25em] font-bold">
+                    <div className="absolute bottom-0 left-0 right-0 px-4 pb-10 pt-16 sm:p-8">
+
+                      <span className="text-[#2BE88E] text-[9px] sm:text-[10px] uppercase tracking-[0.2em] font-bold">
                         Proyecto destacado
                       </span>
 
-                      <h3 className="text-white text-xl sm:text-2xl font-extrabold mt-1">
+                      <h3 className="text-white text-lg sm:text-2xl font-extrabold mt-1 leading-tight max-w-full">
                         {activeProject.title}
                       </h3>
 
-                      <p className="text-white/60 text-xs mt-1">
+                      <p className="text-white/70 text-[10px] sm:text-xs mt-1">
                         {activeProject.category}
                       </p>
                     </div>
@@ -106,6 +108,7 @@ export function Portfolio() {
 
         {/* Right Column: Portfolio Projects */}
         <div className="lg:col-span-5 flex flex-col gap-6">
+
           <span className="text-xs uppercase tracking-widest font-extrabold text-[#2BE88E] bg-[#141414] px-3 py-1 rounded w-fit">
             Portafolio
           </span>
@@ -150,21 +153,31 @@ export function Portfolio() {
                   </div>
                 </div>
 
-                <div className="w-8 h-8 rounded-full bg-[#2BE88E] text-[#141414] flex items-center justify-center font-bold group-hover:scale-110 transition-transform">
-                  →
-                </div>
+                <a
+  href={project.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={`Visitar sitio web de ${project.title}`}
+  onClick={(e) => e.stopPropagation()}
+  className="w-8 h-8 shrink-0 rounded-full bg-[#2BE88E] text-[#141414] flex items-center justify-center font-bold group-hover:scale-110 transition-transform"
+>
+  →
+</a>
               </div>
             ))}
           </div>
 
           <div className="mt-4">
-            <a
-              href="#contacto"
-              className="inline-flex items-center justify-center bg-[#141414] text-white w-full py-4 rounded-full font-semibold text-sm hover:bg-[#2BE88E] hover:text-[#141414] transition-all duration-300"
-            >
-              Ver todos los proyectos →
-            </a>
+           <a
+  href="https://github.com/Xhan88"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center bg-[#141414] text-white w-full py-4 rounded-full font-semibold text-sm hover:bg-[#2BE88E] hover:text-[#141414] transition-all duration-300"
+>
+  Ver todos los proyectos →
+</a>
           </div>
+
         </div>
 
       </div>
