@@ -1,5 +1,6 @@
 import { Logo } from '../ui/Logo';
 import { NAV_LINKS } from '../../data/siteData';
+import { Facebook, Instagram } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -16,18 +17,30 @@ export function Footer() {
         </div>
 
         {/* Social Icons */}
-        <div className="flex items-center gap-4 text-[#141414]">
-          {['facebook', 'instagram', 'youtube', 'linkedin'].map((social) => (
-            <a
-              key={social}
-              href={`#${social}`}
-              className="w-10 h-10 rounded-full border border-[#141414]/20 flex items-center justify-center hover:bg-[#2BE88E] hover:border-[#2BE88E] hover:text-[#141414] transition-all"
-              aria-label={social}
-            >
-              <span className="capitalize text-xs font-bold">{social[0].toUpperCase()}</span>
-            </a>
-          ))}
-        </div>
+
+{/* Social Icons */}
+<div className="flex items-center gap-3 text-[#141414]">
+  <a
+    href="https://www.facebook.com/profile.php?id=61581919241061&locale=es_LA"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+    className="w-10 h-10 rounded-full border border-[#141414]/20 flex items-center justify-center hover:bg-[#2BE88E] hover:border-[#2BE88E] hover:text-[#141414] transition-all duration-300"
+  >
+    <Facebook size={18} strokeWidth={1.8} />
+  </a>
+
+  <a
+    href="https://www.instagram.com/codigofuentecm/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+    className="w-10 h-10 rounded-full border border-[#141414]/20 flex items-center justify-center hover:bg-[#2BE88E] hover:border-[#2BE88E] hover:text-[#141414] transition-all duration-300"
+  >
+    <Instagram size={18} strokeWidth={1.8} />
+  </a>
+</div>
+
       </div>
 
       <div className="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#4A4D4D] gap-4">

@@ -72,7 +72,7 @@ export function Pricing() {
     },
   ];
 
-  const whatsappNumber = '523781234567'; // Reemplazar con tu número real
+  const whatsappNumber = '523781426360'; // Reemplazar con tu número real
 
   const contactWhatsApp = (planName: string) => {
     const message = encodeURIComponent(
@@ -119,7 +119,7 @@ export function Pricing() {
               key={plan.id}
               className={`relative flex flex-col rounded-2xl p-7 sm:p-8 transition-all duration-300 ${
                 plan.featured
-  ? 'bg-[#141414] text-white border-2 border-[#2BE88E] shadow-[0_0_15px_rgba(43,232,142,0.15)] hover:shadow-[0_0_20px_rgba(43,232,142,0.35),0_0_45px_rgba(43,232,142,0.15)] hover:border-[#2BE88E] md:scale-[1.03] z-10 transition-all duration-500'
+                   ? 'bg-[#141414] text-white border-2 border-[#2BE88E] shadow-[0_0_15px_rgba(43,232,142,0.15)] hover:shadow-[0_0_20px_rgba(43,232,142,0.35),0_0_45px_rgba(43,232,142,0.15)] hover:border-[#2BE88E] md:scale-[1.03] z-10 transition-all duration-500'
                   : 'bg-[#D8DADA] text-[#141414] border border-[#141414]/15 hover:border-[#2BE88E] hover:-translate-y-1'
               }`}
             >
