@@ -37,7 +37,7 @@ export function Hero({ startTyping }: HeroProps) {
         <div className="lg:col-span-6 flex flex-col gap-6 hero-reveal">
 
           <span className="inline-block text-xs uppercase tracking-widest font-extrabold text-[#4A4D4D]">
-            Desarrollo y Marketing Digital
+            Desarrollo web y Marketing Digital
           </span>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08] text-[#141414]">
