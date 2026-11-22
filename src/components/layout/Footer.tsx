@@ -46,6 +46,12 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#4A4D4D] gap-4">
         <p>© 2026 Código Fuente. Todos los derechos reservados.</p>
         <p>Desarrollo y marketing digital.</p>
+        <a
+  href="/aviso-de-privacidad"
+  className="text-xs text-[#4A4D4D] hover:text-[#269c69] transition-colors"
+>
+  Aviso de privacidad
+</a>
       </div>
     </footer>
   );

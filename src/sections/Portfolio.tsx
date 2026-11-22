@@ -21,7 +21,7 @@ export function Portfolio() {
   }, [isPaused]);
 
   return (
-    <section id="portafolio" className="py-24">
+    <section id="proyectos" className="py-24 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
         {/* Left Column: Animated Project Gallery */}
@@ -153,14 +153,14 @@ export function Portfolio() {
                   </div>
                 </div>
 
-                <a
-  href={project.url}
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label={`Visitar sitio web de ${project.title}`}
-  onClick={(e) => e.stopPropagation()}
-  className="w-8 h-8 shrink-0 rounded-full bg-[#2BE88E] text-[#141414] flex items-center justify-center font-bold group-hover:scale-110 transition-transform"
->
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Visitar sitio web de ${project.title}`}
+                      onClick={(e) => e.stopPropagation()}
+                      className="w-8 h-8 shrink-0 rounded-full bg-[#2BE88E] text-[#141414] flex items-center justify-center font-bold group-hover:scale-110 transition-transform"
+                    >
   →
 </a>
               </div>
@@ -169,11 +169,11 @@ export function Portfolio() {
 
           <div className="mt-4">
            <a
-  href="https://github.com/Xhan88"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center justify-center bg-[#141414] text-white w-full py-4 rounded-full font-semibold text-sm hover:bg-[#2BE88E] hover:text-[#141414] transition-all duration-300"
->
+              href="https://github.com/Xhan88"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-[#141414] text-white w-full py-4 rounded-full font-semibold text-sm hover:bg-[#2BE88E] hover:text-[#141414] transition-all duration-300"
+            >
   Ver todos los proyectos →
 </a>
           </div>
