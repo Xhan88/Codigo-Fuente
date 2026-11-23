@@ -1,7 +1,7 @@
 
 export function CtaBanner() {
   return (
-    <section id="contacto" className="py-20">
+    <section id="contacto" className="py-20 ">
       <div className="max-w-7xl mx-auto px-6">
         <div className="bg-[#141414] text-white p-10 sm:p-16 rounded-3xl relative overflow-hidden shadow-2xl border border-[#2BE88E]/30 flex flex-col lg:flex-row items-center justify-between gap-8">
           

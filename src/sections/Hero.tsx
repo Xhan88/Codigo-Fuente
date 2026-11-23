@@ -44,7 +44,7 @@ export function Hero({ startTyping }: HeroProps) {
             En Código Fuente <br />
             no vendemos páginas web.{' '}
 
-            <span className="bg-[#2BE88E] text-[#141414] px-2 py-0.5 rounded-[4px] inline">
+            <span className="bg-[#17f08f] text-[#141414] px-2 py-0.5 rounded-[4px] inline">
               {typedText}
               <span className="typing-cursor">|</span>
             </span>

@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { ScrollReveal } from '../components/ui/ScrollReveal';
 
 type Scene = 'code' | 'deploy' | 'website';
 
@@ -121,6 +122,7 @@ const currentVisual = websiteVisuals[visualIndex];
 
         {/* Left Column */}
         <div className="lg:col-span-6 flex flex-col gap-6">
+          <ScrollReveal y={30}>
           <span className="text-xs uppercase tracking-widest font-extrabold text-[#4A4D4D] block">
             Sobre nosotros
           </span>
@@ -144,10 +146,13 @@ const currentVisual = websiteVisuals[visualIndex];
               Conoce más sobre nosotros →
             </a>
           </div>
+          </ScrollReveal>
         </div>
+        
 
         {/* Right Column: Code to Website */}
         <div className="lg:col-span-6">
+          <ScrollReveal y={35} delay={0.15}>
           <div className="bg-[#141414] p-3 rounded-2xl shadow-xl border border-white/10 relative overflow-hidden">
 
             <div className="relative bg-[#0a0a0a] rounded-xl overflow-hidden aspect-[16/10]">
@@ -196,6 +201,7 @@ const currentVisual = websiteVisuals[visualIndex];
                         <span className="text-white/50 text-[10px] font-mono">
                           DigitalExperience.tsx
                         </span>
+                        
                       </div>
 
                       <div className="font-mono text-[9px] sm:text-xs leading-[1.9]">
@@ -230,6 +236,7 @@ const currentVisual = websiteVisuals[visualIndex];
                           </motion.div>
                         ))}
                       </div>
+                      
                     </div>
 
                     {/* Editor footer */}
@@ -339,11 +346,13 @@ const currentVisual = websiteVisuals[visualIndex];
                           <span>Inicio</span>
                           <span>Servicios</span>
                           <span>Contacto</span>
+                          
                         </div>
                       </motion.div>
+                      
 
 
-<div className="flex items-center gap-3 sm:gap-5">
+             <div className="flex items-center gap-3 sm:gap-5">
 
   {/* Website text */}
   <div className="w-[62%] min-w-0">
@@ -535,6 +544,7 @@ const currentVisual = websiteVisuals[visualIndex];
 
             </div>
           </div>
+          </ScrollReveal>
         </div>
 
       </div>
